@@ -6,3 +6,42 @@ body {
     opacity: 0.9;
     text-align: center;
 }
+
+header {
+    position: fixed;
+    top: 0; /*Fix to top of page*/
+    width: 100%;
+    height: 69px;
+    border-bottom: 1px solid seashell;  
+    background-color: black;
+}
+
+#logo {
+    height: 50px;
+    padding: 10px;  
+    float: left;
+    display: block;
+}
+
+/*Navigation*/
+li {
+    float: right;
+    display: block;
+    text-decoration: underline;
+    margin: 10px;  
+}
+
+/*Navigation bar responses to users*/
+a:link {
+    color: seashell;
+    text-decoration: none;
+}
+a:visited {
+    color: seashell;
+}
+a:active {
+
+}
+a:hover {
+
+}
