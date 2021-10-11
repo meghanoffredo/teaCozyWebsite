@@ -284,9 +284,3 @@ footer {
     #sectionOne h4 {
         padding-bottom: 2%;
     }
-
-/*Contact Info*/
-    #sectionFour {
-        margin-left: 450px; /*Recenter contact details*/
-    }
-}
