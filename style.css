@@ -272,3 +272,21 @@ footer {
         font-size: 60%;
     }
 }
+
+/* Optimize for iPad*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    
+/*Store Mission*/
+    #sectionOne h2 {
+        padding-top: 1%;
+    }
+
+    #sectionOne h4 {
+        padding-bottom: 2%;
+    }
+
+/*Contact Info*/
+    #sectionFour {
+        margin-left: 450px; /*Recenter contact details*/
+    }
+}
