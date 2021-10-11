@@ -102,7 +102,7 @@ a:active, a:hover {
 
 #sectionTwo h2 {
     font-size: 1.2rem;
-    padding-top: 5%; /*Move down section title from prior section*/
+    padding-top: 30px; /*Move down section title from prior section*/
 }
 
 #sectionTwo h4 {
@@ -135,7 +135,7 @@ figcaption {
     flex-direction: row;
     flex-wrap: wrap; /*Center section title*/
     opacity: 0.9;
-    margin-top: 5%; /*Move down background image from prior section*/
+    margin-top: 30px; /*Move down background image from prior section*/
 }
 
 #locations {
@@ -145,8 +145,8 @@ figcaption {
 }
 
 .store-locations {
-    height: 40%;
-    width: 25%;
+    height: 200px;
+    width: 300px;
     flex-direction: column;
     flex-wrap: wrap;
     align-self: center;
@@ -174,7 +174,7 @@ figcaption {
 
 #sectionFour h2 {
     font-size: 1.2rem;
-    margin-top: 5%; /*Move down section title from prior section*/
+    margin-top: 50px; /*Move down section title from prior section*/
 }
 
 #sectionFour h5 {
@@ -182,14 +182,91 @@ figcaption {
 }
 
 #sectionFour h2, #sectionFour h5 {
-    display: block;
     align-self: center;
 }
 
 /*Copyright Footer*/
 footer {
     padding-left: 20px;
-    margin-top: 2%; /*Move down section title from prior section*/
+    margin-top: 30px; /*Move down section title from prior section*/
     bottom: 0;
     float: left;
+}
+
+
+/*Optimize for mobile*/
+@media only screen and (max-width: 480px) {
+
+/*Header*/
+    #logo {
+        height: 60%;
+    }
+
+    li {
+        font-size: 60%;
+        padding: 3px;
+        margin-right: 15px;
+    }
+
+/*Store Mission*/
+    #sectionOne {
+        width: 90%;
+    }
+
+ #sectionOne h4 {
+        font-size: 80%;
+    }
+
+/*Featured Menu Items*/
+    #sectionTwo {
+        width: 80%;
+    }
+
+    #sectionTwo h4 {
+        font-size: 80%;
+    }
+
+    figure img {
+        width: 80%;
+        height: 80%;
+    }
+    
+    figcaption {
+        font-size: 80%;
+    }
+
+/*Store Locations*/
+    #sectionThree {
+        width: 80%;
+        height: 150%;
+        margin-top: 120%; /*Remove overlap between sections*/
+    }
+
+    #locations {
+        width: 80%;
+        font-size: 70%;
+    }
+
+    .store-locations {
+        width: 70%;
+    }
+
+    .store-locations h3 {
+        font-size: 90%;
+    }
+    
+    .store-locations p {
+        font-size: 75%;
+    }
+
+/*Contact Info*/
+    #sectionFour {
+    }
+
+/*Copyright Footer*/
+    footer {
+        padding: 0;
+        float: none;
+        font-size: 60%;
+    }
 }
