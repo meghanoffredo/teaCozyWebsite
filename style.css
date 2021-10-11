@@ -274,14 +274,16 @@ footer {
 }
 
 /* Optimize for iPad*/
-@media only screen and (min-device-width: 764px) and (max-device-width: 1024px) and (orientation: portrait) {
+@media only screen and (min-device-width: 764px) and (max-device-width: 1024px) {
     
 /*Store Mission*/
     #sectionOne h2 {
         padding-top: 1%;
+        padding-bottom: 0;
     }
 
     #sectionOne h4 {
+        padding-top: 0;
         padding-bottom: 2%;
     }
 }
