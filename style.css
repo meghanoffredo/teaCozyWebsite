@@ -183,6 +183,7 @@ figcaption {
 
 #sectionFour h2, #sectionFour h5 {
     align-self: center;
+    line-height: 0px;
 }
 
 /*Copyright Footer*/
@@ -213,8 +214,13 @@ footer {
         width: 90%;
     }
 
- #sectionOne h4 {
-        font-size: 80%;
+    #sectionOne h2 {
+        padding-top: 3%;
+    }
+
+    #sectionOne h4 {
+        font-size: 65%;
+        padding-bottom: 5%;
     }
 
 /*Featured Menu Items*/
@@ -257,10 +263,6 @@ footer {
     
     .store-locations p {
         font-size: 75%;
-    }
-
-/*Contact Info*/
-    #sectionFour {
     }
 
 /*Copyright Footer*/
