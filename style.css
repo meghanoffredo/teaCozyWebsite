@@ -4,6 +4,8 @@ html {
     text-align: center;
     color: seashell;
     background-color: black;
+    overflow-x: none;
+    height: 100%;
 }
 
 /*Fixed Header*/
@@ -18,7 +20,7 @@ header {
 }
 
 #logo {
-    height: 50px; 
+    height: 40px; 
     float: left;
     display: block;
     padding: 10px; 
@@ -189,16 +191,20 @@ figcaption {
 /*Copyright Footer*/
 footer {
     padding-left: 20px;
-    margin-top: 30px; /*Move down section title from prior section*/
+    margin: 15px auto; /*Move down section title from prior section*/
     bottom: 0;
-    float: left;
 }
 
 
-/*Optimize for mobile*/
-@media only screen and (max-width: 480px) {
+/*Optimize for smaller screens*/
+@media only screen and (max-width: 1225px) {
 
 /*Header*/
+
+    header {
+        height: 50px;
+    }
+
     #logo {
         height: 60%;
     }
@@ -226,6 +232,8 @@ footer {
 /*Featured Menu Items*/
     #sectionTwo {
         width: 80%;
+        height: auto;
+        padding-bottom: 0px;
     }
 
     #sectionTwo h4 {
@@ -245,7 +253,6 @@ footer {
     #sectionThree {
         width: 80%;
         height: 150%;
-        margin-top: 120%; /*Remove overlap between sections*/
     }
 
     #locations {
@@ -269,21 +276,7 @@ footer {
     footer {
         padding: 0;
         float: none;
-        font-size: 60%;
     }
 }
 
-/* Optimize for iPad*/
-@media only screen and (min-device-width: 764px) and (max-device-width: 1024px) {
-    
-/*Store Mission*/
-    #sectionOne h2 {
-        padding-top: 1%;
-        padding-bottom: 0;
-    }
 
-    #sectionOne h4 {
-        padding-top: 0;
-        padding-bottom: 2%;
-    }
-}
